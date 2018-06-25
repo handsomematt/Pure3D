@@ -1,0 +1,28 @@
+﻿using System.IO;
+using System.Text;
+
+namespace Pure3D.Chunks
+{
+    [ChunkType(65540)]
+    public class BoundingSphereChunk : Chunk
+    {
+        public Vector3 Centre;
+        public float Radius;
+
+        public BoundingSphereChunk(File file, uint type) : base(file, type)
+        {
+        }
+
+        public override void ReadHeader(Stream stream, long length)
+        {
+            BinaryReader reader = new BinaryReader(stream);
+            this.Centre = Util.ReadVector3(reader);
+            this.Radius = reader.ReadSingle();
+        }
+
+        public override string ToString()
+        {
+            return "Bounding Sphere";
+        }
+    }
+}

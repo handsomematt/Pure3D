@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pure3D", "Pure3D.csproj", "{A6D43DFC-0B04-4FA5-B12C-AB37DF07FF4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6D43DFC-0B04-4FA5-B12C-AB37DF07FF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6D43DFC-0B04-4FA5-B12C-AB37DF07FF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6D43DFC-0B04-4FA5-B12C-AB37DF07FF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6D43DFC-0B04-4FA5-B12C-AB37DF07FF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2A1B74B-B654-4616-8177-B671544D3A9E}
+	EndGlobalSection
+EndGlobal

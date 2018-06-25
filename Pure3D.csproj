@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6D43DFC-0B04-4FA5-B12C-AB37DF07FF4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Pure3D</RootNamespace>
+    <AssemblyName>Pure3D</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Chunk.cs" />
+    <Compile Include="Chunks\PhysicsInertiaMatrixChunk.cs" />
+    <Compile Include="Chunks\PhysicsVectorChunk.cs" />
+    <Compile Include="Chunks\PhysicsJointChunk.cs" />
+    <Compile Include="Chunks\PhysicsObjectChunk.cs" />
+    <Compile Include="Chunks\IndexListChunk.cs" />
+    <Compile Include="Chunks\ColourListChunk.cs" />
+    <Compile Include="Chunks\PackedNormalList.cs" />
+    <Compile Include="Chunks\MatrixListChunk.cs" />
+    <Compile Include="Chunks\UVListChunk.cs" />
+    <Compile Include="Chunks\NormalListChunk.cs" />
+    <Compile Include="Chunks\PositionListChunk.cs" />
+    <Compile Include="Chunks\BoundingSphereChunk.cs" />
+    <Compile Include="Chunks\BoundingBoxChunk.cs" />
+    <Compile Include="Chunks\VertexShaderChunk.cs" />
+    <Compile Include="Chunks\PrimitiveGroupChunk.cs" />
+    <Compile Include="Chunks\BillboardPerspectiveInfoChunk.cs" />
+    <Compile Include="Chunks\BillboardDisplayInfoChunk.cs" />
+    <Compile Include="Chunks\BillboardQuadChunk.cs" />
+    <Compile Include="Chunks\BillboardQuadGroupChunk.cs" />
+    <Compile Include="Chunks\CompositeDrawableChunk.cs" />
+    <Compile Include="Chunks\CompositeDrawableEffectListChunk.cs" />
+    <Compile Include="Chunks\CompositeDrawablePropListChunk.cs" />
+    <Compile Include="Chunks\CompositeDrawableSortOrderChunk.cs" />
+    <Compile Include="Chunks\CompositeDrawablePropChunk.cs" />
+    <Compile Include="Chunks\SkinChunk.cs" />
+    <Compile Include="Chunks\MeshChunk.cs" />
+    <Compile Include="Chunks\LocatorChunk.cs" />
+    <Compile Include="Chunks\SkeletonJointBonePreserveChunk.cs" />
+    <Compile Include="Chunks\CompositeDrawableSkinListChunk.cs" />
+    <Compile Include="Chunks\SkeletonJointMirrorMapChunk.cs" />
+    <Compile Include="Chunks\SkeletonJointChunk.cs" />
+    <Compile Include="Chunks\SkeletonChunk.cs" />
+    <Compile Include="Chunks\CameraChunk.cs" />
+    <Compile Include="Chunks\CarCameraDataChunk.cs" />
+    <Compile Include="Chunks\ImageDataChunk.cs" />
+    <Compile Include="Chunks\ImageChunk.cs" />
+    <Compile Include="Chunks\ShaderChunk.cs" />
+    <Compile Include="Chunks\ShaderParamChunk.cs" />
+    <Compile Include="Chunks\TextureChunk.cs" />
+    <Compile Include="Chunks\NamedChunk.cs" />
+    <Compile Include="Chunks\UnknownChunk.cs" />
+    <Compile Include="Chunks\RootChunk.cs" />
+    <Compile Include="File.cs" />
+    <Compile Include="Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,28 @@
+﻿using System.IO;
+using System.Text;
+
+namespace Pure3D.Chunks
+{
+    [ChunkType(65539)]
+    public class BoundingBoxChunk : Chunk
+    {
+        public Vector3 Low;
+        public Vector3 High;
+
+        public BoundingBoxChunk(File file, uint type) : base(file, type)
+        {
+        }
+
+        public override void ReadHeader(Stream stream, long length)
+        {
+            BinaryReader reader = new BinaryReader(stream);
+            this.Low = Util.ReadVector3(reader);
+            this.High = Util.ReadVector3(reader);
+        }
+
+        public override string ToString()
+        {
+            return "Bounding Box";
+        }
+    }
+}
