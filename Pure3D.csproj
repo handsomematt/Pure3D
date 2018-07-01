@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Chunks\MatrixPaletteChunk.cs" />
     <Compile Include="Chunk.cs" />
     <Compile Include="Chunks\PhysicsInertiaMatrixChunk.cs" />
     <Compile Include="Chunks\PhysicsVectorChunk.cs" />
@@ -90,10 +90,18 @@
     <Compile Include="Chunks\UnknownChunk.cs" />
     <Compile Include="Chunks\RootChunk.cs" />
     <Compile Include="File.cs" />
+    <Compile Include="Types.cs" />
     <Compile Include="Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LICENSE" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
