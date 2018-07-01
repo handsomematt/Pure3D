@@ -1,8 +1,13 @@
 # Pure3D
 
-.NET library for loading the Pure3D file format.
+.NET library for loading the Pure3D file format, used in Radical Entertainment's
+Pure3D game engine used most famously for the following games:
 
-## Example
+* The Simpsons: Road Rage
+* The Simpsons: Hit & Run
+* Crash Tag Team Racing
+
+## Usage
 
 ```C#
 static void Main(string[] args)
@@ -19,3 +24,7 @@ static void PrintHierarchy(Pure3D.Chunk chunk, int indent)
         PrintHierarchy(child, indent + 1);
 }
 ```
+
+## License
+ 
+[The MIT License (MIT) - Copyright (c) 2018 Matt Stevens](LICENSE)
