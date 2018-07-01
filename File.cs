@@ -5,11 +5,11 @@ namespace Pure3D
 {
     public class File
     {
-        public readonly Chunk RootChunk;
+        public readonly Chunks.Root RootChunk;
 
         public File()
         {
-            RootChunk = new Chunks.RootChunk(this, 0);
+            RootChunk = new Chunks.Root(this, 0);
         }
 
         public void Load(string path)

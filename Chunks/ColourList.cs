@@ -3,12 +3,12 @@ using System.Text;
 
 namespace Pure3D.Chunks
 {
-    [ChunkType(65552)]
-    public class PackedNormalList : Chunk
+    [ChunkType(65544)]
+    public class ColourList : Chunk
     {
-        public byte[] Normals;
+        public uint[] Colours;
 
-        public PackedNormalList(File file, uint type) : base(file, type)
+        public ColourList(File file, uint type) : base(file, type)
         {
         }
 
@@ -16,12 +16,14 @@ namespace Pure3D.Chunks
         {
             BinaryReader reader = new BinaryReader(stream);
             uint len = reader.ReadUInt32();
-            Normals = reader.ReadBytes((int)len);
+            Colours = new uint[len];
+            for (int i = 0; i < len; i++)
+                Colours[i] = reader.ReadUInt32();
         }
 
         public override string ToString()
         {
-            return $"Packed Normal List ({Normals.Length})";
+            return $"Colour List ({Colours.Length})";
         }
     }
 }
