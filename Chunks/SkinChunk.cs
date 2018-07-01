@@ -15,9 +15,9 @@ namespace Pure3D.Chunks
         {
             BinaryReader reader = new BinaryReader(stream);
             base.ReadHeader(stream, length);
-            this.Version = reader.ReadUInt32();
-            this.SkeletonName = Util.ReadString(reader);
-            this.NumPrimGroups = reader.ReadUInt32();
+            Version = reader.ReadUInt32();
+            SkeletonName = Util.ReadString(reader);
+            NumPrimGroups = reader.ReadUInt32();
         }
 
         public override string ToString()

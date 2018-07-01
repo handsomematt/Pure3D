@@ -15,8 +15,8 @@ namespace Pure3D.Chunks
         public override void ReadHeader(Stream stream, long length)
         {
             BinaryReader reader = new BinaryReader(stream);
-            this.Version = reader.ReadUInt32();
-            this.Perspective = reader.ReadUInt32();
+            Version = reader.ReadUInt32();
+            Perspective = reader.ReadUInt32();
         }
 
         public override string ToString()

@@ -22,14 +22,14 @@ namespace Pure3D.Chunks
         {
             BinaryReader reader = new BinaryReader(stream);
             base.ReadHeader(stream, length);
-            this.Version = reader.ReadUInt32();
-            this.FieldOfView = reader.ReadSingle();
-            this.AspectRatio = reader.ReadSingle();
-            this.NearClip = reader.ReadSingle();
-            this.FarClip = reader.ReadSingle();
-            this.Position = Util.ReadVector3(reader);
-            this.Look = Util.ReadVector3(reader);
-            this.Up = Util.ReadVector3(reader);
+            Version = reader.ReadUInt32();
+            FieldOfView = reader.ReadSingle();
+            AspectRatio = reader.ReadSingle();
+            NearClip = reader.ReadSingle();
+            FarClip = reader.ReadSingle();
+            Position = Util.ReadVector3(reader);
+            Look = Util.ReadVector3(reader);
+            Up = Util.ReadVector3(reader);
         }
 
         public override string ToString()

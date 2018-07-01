@@ -18,11 +18,11 @@ namespace Pure3D.Chunks
         public override void ReadHeader(Stream stream, long length)
         {
             BinaryReader reader = new BinaryReader(stream);
-            this.Index = reader.ReadUInt32();
-            this.Unknown = reader.ReadSingle();
-            this.Angle = reader.ReadSingle();
-            this.Distance = reader.ReadSingle();
-            this.Look = Util.ReadVector3(reader);
+            Index = reader.ReadUInt32();
+            Unknown = reader.ReadSingle();
+            Angle = reader.ReadSingle();
+            Distance = reader.ReadSingle();
+            Look = Util.ReadVector3(reader);
         }
 
         public override string ToString()

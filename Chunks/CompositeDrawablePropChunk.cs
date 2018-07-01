@@ -16,8 +16,8 @@ namespace Pure3D.Chunks
         {
             BinaryReader reader = new BinaryReader(stream);
             base.ReadHeader(stream, length);
-            this.IsTranslucent = reader.ReadUInt32();
-            this.SkeletonJointID = reader.ReadUInt32();
+            IsTranslucent = reader.ReadUInt32();
+            SkeletonJointID = reader.ReadUInt32();
         }
 
         public override string ToString()

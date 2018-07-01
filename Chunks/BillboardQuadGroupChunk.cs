@@ -19,13 +19,13 @@ namespace Pure3D.Chunks
         public override void ReadHeader(Stream stream, long length)
         {
             BinaryReader reader = new BinaryReader(stream);
-            this.Version = reader.ReadUInt32(); // version before name, rare case.
+            Version = reader.ReadUInt32(); // version before name, rare case.
             base.ReadHeader(stream, length);
-            this.Shader = Util.ReadString(reader);
-            this.ZTest = reader.ReadUInt32();
-            this.ZWrite = reader.ReadUInt32();
-            this.Fog = reader.ReadUInt32();
-            this.NumQuads = reader.ReadUInt32();
+            Shader = Util.ReadString(reader);
+            ZTest = reader.ReadUInt32();
+            ZWrite = reader.ReadUInt32();
+            Fog = reader.ReadUInt32();
+            NumQuads = reader.ReadUInt32();
         }
 
         public override string ToString()

@@ -17,7 +17,7 @@ namespace Pure3D.Chunks
         {
             BinaryReader reader = new BinaryReader(stream);
             uint len = reader.ReadUInt32();
-            this.Channel = reader.ReadUInt32();
+            Channel = reader.ReadUInt32();
             UVs = new Vector2[len];
             for (int i = 0; i < len; i++)
                 UVs[i] = Util.ReadVector2(reader);

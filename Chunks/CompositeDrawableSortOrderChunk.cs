@@ -13,7 +13,7 @@ namespace Pure3D.Chunks
 
         public override void ReadHeader(Stream stream, long length)
         {
-            this.SortOrder = new BinaryReader(stream).ReadSingle();
+            SortOrder = new BinaryReader(stream).ReadSingle();
         }
 
         public override string ToString()

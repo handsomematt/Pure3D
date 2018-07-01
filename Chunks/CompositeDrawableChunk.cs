@@ -14,7 +14,7 @@ namespace Pure3D.Chunks
         public override void ReadHeader(Stream stream, long length)
         {
             base.ReadHeader(stream, length);
-            this.SkeletonName = Util.ReadString(new BinaryReader(stream));
+            SkeletonName = Util.ReadString(new BinaryReader(stream));
         }
 
         public override string ToString()

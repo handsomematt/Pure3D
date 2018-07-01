@@ -22,12 +22,12 @@ namespace Pure3D.Chunks
             base.ReadHeader(stream, length);
 
             BinaryReader reader = new BinaryReader(stream);
-            this.Version = reader.ReadUInt32();
-            this.PddiShaderName = Util.ReadString(reader);
-            this.HasTranslucency = reader.ReadUInt32();
-            this.VertexNeeds = reader.ReadUInt32();
-            this.VertexMask = reader.ReadUInt32();
-            this.NumParams = reader.ReadUInt32();
+            Version = reader.ReadUInt32();
+            PddiShaderName = Util.ReadString(reader);
+            HasTranslucency = reader.ReadUInt32();
+            VertexNeeds = reader.ReadUInt32();
+            VertexMask = reader.ReadUInt32();
+            NumParams = reader.ReadUInt32();
         }
 
         public override string ToString()

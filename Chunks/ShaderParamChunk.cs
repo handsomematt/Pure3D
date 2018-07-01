@@ -13,7 +13,7 @@ namespace Pure3D.Chunks
 
         public override void ReadHeader(Stream stream, long length)
         {
-            this.Param = Util.ZeroTerminate(Encoding.ASCII.GetString(new BinaryReader(stream).ReadBytes(4)));
+            Param = Util.ZeroTerminate(Encoding.ASCII.GetString(new BinaryReader(stream).ReadBytes(4)));
         }
 
         public override string ToString()
@@ -34,7 +34,7 @@ namespace Pure3D.Chunks
         public override void ReadHeader(Stream stream, long length)
         {
             base.ReadHeader(stream, length);
-            this.Value = Util.ReadString(new BinaryReader(stream));
+            Value = Util.ReadString(new BinaryReader(stream));
         }
     }
 
@@ -50,7 +50,7 @@ namespace Pure3D.Chunks
         public override void ReadHeader(Stream stream, long length)
         {
             base.ReadHeader(stream, length);
-            this.Value = new BinaryReader(stream).ReadUInt32();
+            Value = new BinaryReader(stream).ReadUInt32();
         }
     }
 
@@ -66,7 +66,7 @@ namespace Pure3D.Chunks
         public override void ReadHeader(Stream stream, long length)
         {
             base.ReadHeader(stream, length);
-            this.Value = new BinaryReader(stream).ReadSingle();
+            Value = new BinaryReader(stream).ReadSingle();
         }
     }
 
@@ -82,7 +82,7 @@ namespace Pure3D.Chunks
         public override void ReadHeader(Stream stream, long length)
         {
             base.ReadHeader(stream, length);
-            this.Color = new BinaryReader(stream).ReadUInt32();
+            Color = new BinaryReader(stream).ReadUInt32();
         }
     }
 }

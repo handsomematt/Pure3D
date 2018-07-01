@@ -23,20 +23,20 @@ namespace Pure3D.Chunks
         {
             BinaryReader reader = new BinaryReader(stream);
             base.ReadHeader(stream, length);
-            this.Version = reader.ReadUInt32();
-            this.Width = reader.ReadUInt32();
-            this.Height = reader.ReadUInt32();
-            this.Bpp = reader.ReadUInt32();
-            this.AlphaDepth = reader.ReadUInt32();
-            this.NumMipMaps = reader.ReadUInt32();
-            this.TextureType = reader.ReadUInt32();
-            this.Usage = reader.ReadUInt32();
-            this.Priority = reader.ReadUInt32();
+            Version = reader.ReadUInt32();
+            Width = reader.ReadUInt32();
+            Height = reader.ReadUInt32();
+            Bpp = reader.ReadUInt32();
+            AlphaDepth = reader.ReadUInt32();
+            NumMipMaps = reader.ReadUInt32();
+            TextureType = reader.ReadUInt32();
+            Usage = reader.ReadUInt32();
+            Priority = reader.ReadUInt32();
         }
 
         public override string ToString()
         {
-            return $"Texture: {this.Name} ({Width}x{Height})";
+            return $"Texture: {Name} ({Width}x{Height})";
         }
     }
 }

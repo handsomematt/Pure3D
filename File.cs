@@ -9,13 +9,13 @@ namespace Pure3D
 
         public File()
         {
-            this.RootChunk = new Chunks.RootChunk(this, 0);
+            RootChunk = new Chunks.RootChunk(this, 0);
         }
 
         public void Load(string path)
         {
             using (FileStream fileStream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read))
-                this.Load((Stream)fileStream);
+                Load(fileStream);
         }
 
         public void Load(Stream stream)
@@ -33,8 +33,8 @@ namespace Pure3D
                 throw new Exception("Compressed Pure3D not supported yet.. weird compression");
                 // todo: redirect the stream
             }
-             
-            this.RootChunk.Read(stream, true, stream.Length);
+
+            RootChunk.Read(stream, true, stream.Length);
         }
     }
 

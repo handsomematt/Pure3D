@@ -9,12 +9,12 @@ namespace Pure3D.Chunks
 
         public UnknownChunk(File file, uint type) : base(file, type)
         {
-            this.unknownType = type;
+            unknownType = type;
         }
 
         public override void ReadHeader(Stream stream, long length)
         {
-            this.Data = new BinaryReader(stream).ReadBytes((int)length);
+            Data = new BinaryReader(stream).ReadBytes((int)length);
         }
 
         public override string ToString()

@@ -13,7 +13,7 @@ namespace Pure3D.Chunks
 
         public override void ReadHeader(Stream stream, long length)
         {
-            this.PreserveBoneLengths = new BinaryReader(stream).ReadUInt32();
+            PreserveBoneLengths = new BinaryReader(stream).ReadUInt32();
         }
 
         public override string ToString()

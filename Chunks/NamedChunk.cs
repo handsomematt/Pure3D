@@ -18,7 +18,7 @@ namespace Pure3D.Chunks
 
         public override string ToString()
         {
-            return $"Named Chunk: {this.Name}";
+            return $"Named Chunk: {Name}";
         }
     }
 }

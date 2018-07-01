@@ -21,13 +21,13 @@ namespace Pure3D.Chunks
         {
             BinaryReader reader = new BinaryReader(stream);
             base.ReadHeader(stream, length);
-            this.Version = reader.ReadUInt32();
-            this.Width = reader.ReadUInt32();
-            this.Height = reader.ReadUInt32();
-            this.Bpp = reader.ReadUInt32();
-            this.Palettized = reader.ReadUInt32();
-            this.HasAlpha = reader.ReadUInt32();
-            this.Format = (Formats)reader.ReadUInt32();
+            Version = reader.ReadUInt32();
+            Width = reader.ReadUInt32();
+            Height = reader.ReadUInt32();
+            Bpp = reader.ReadUInt32();
+            Palettized = reader.ReadUInt32();
+            HasAlpha = reader.ReadUInt32();
+            Format = (Formats)reader.ReadUInt32();
         }
 
         public override string ToString()

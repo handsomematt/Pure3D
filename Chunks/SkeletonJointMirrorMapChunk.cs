@@ -17,10 +17,10 @@ namespace Pure3D.Chunks
         public override void ReadHeader(Stream stream, long length)
         {
             BinaryReader reader = new BinaryReader(stream);
-            this.MappedJointIndex = reader.ReadUInt32();
-            this.XAxisMap = reader.ReadSingle();
-            this.YAxisMap = reader.ReadSingle();
-            this.ZAxisMap = reader.ReadSingle();
+            MappedJointIndex = reader.ReadUInt32();
+            XAxisMap = reader.ReadSingle();
+            YAxisMap = reader.ReadSingle();
+            ZAxisMap = reader.ReadSingle();
         }
 
         public override string ToString()

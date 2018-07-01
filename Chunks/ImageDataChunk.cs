@@ -15,7 +15,7 @@ namespace Pure3D.Chunks
         {
             BinaryReader reader = new BinaryReader(stream);
             uint len = reader.ReadUInt32();
-            this.Data = reader.ReadBytes((int)len);
+            Data = reader.ReadBytes((int)len);
         }
 
         public override string ToString()

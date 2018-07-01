@@ -15,7 +15,7 @@ namespace Pure3D.Chunks
         public override void ReadHeader(Stream stream, long length)
         {
             BinaryReader reader = new BinaryReader(stream);
-            this.VertexShaderName = Util.ReadString(reader);
+            VertexShaderName = Util.ReadString(reader);
         }
 
         public override string ToString()
