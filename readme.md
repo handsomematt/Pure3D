@@ -27,4 +27,4 @@ static void PrintHierarchy(Pure3D.Chunk chunk, int indent)
 
 ## License
  
-[The MIT License (MIT) - Copyright (c) 2018 Matt Stevens](LICENSE)
+[The MIT License (MIT) - Copyright (c) 2018 Matt Stevens](license)

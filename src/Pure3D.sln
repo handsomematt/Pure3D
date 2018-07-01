@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pure3D", "Pure3D.csproj", "{A6D43DFC-0B04-4FA5-B12C-AB37DF07FF4B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pure3D", "Pure3D/Pure3D.csproj", "{A6D43DFC-0B04-4FA5-B12C-AB37DF07FF4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

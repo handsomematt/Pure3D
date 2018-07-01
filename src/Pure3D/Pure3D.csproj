@@ -89,19 +89,13 @@
     <Compile Include="Chunks\Named.cs" />
     <Compile Include="Chunks\Unknown.cs" />
     <Compile Include="Chunks\Root.cs" />
+    <Compile Include="ChunkType.cs" />
     <Compile Include="File.cs" />
     <Compile Include="Types.cs" />
     <Compile Include="Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include=".gitignore" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="LICENSE" />
-    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
