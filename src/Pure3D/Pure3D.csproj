@@ -45,6 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chunks\Animation.cs" />
+    <Compile Include="Chunks\AnimationGroup.cs" />
+    <Compile Include="Chunks\AnimationGroupList.cs" />
+    <Compile Include="Chunks\AnimationSize.cs" />
+    <Compile Include="Chunks\CompressedQuaternionChannel.cs" />
     <Compile Include="Chunks\MatrixPalette.cs" />
     <Compile Include="Chunk.cs" />
     <Compile Include="Chunks\PhysicsInertiaMatrix.cs" />
@@ -60,6 +65,9 @@
     <Compile Include="Chunks\PositionList.cs" />
     <Compile Include="Chunks\BoundingSphere.cs" />
     <Compile Include="Chunks\BoundingBox.cs" />
+    <Compile Include="Chunks\Vector2Channel.cs" />
+    <Compile Include="Chunks\Vector3Channel.cs" />
+    <Compile Include="Chunks\VersionNamed.cs" />
     <Compile Include="Chunks\VertexShader.cs" />
     <Compile Include="Chunks\PrimitiveGroup.cs" />
     <Compile Include="Chunks\BillboardPerspectiveInfo.cs" />
@@ -89,6 +97,7 @@
     <Compile Include="Chunks\Named.cs" />
     <Compile Include="Chunks\Unknown.cs" />
     <Compile Include="Chunks\Root.cs" />
+    <Compile Include="Chunks\WeightList.cs" />
     <Compile Include="ChunkType.cs" />
     <Compile Include="File.cs" />
     <Compile Include="Types.cs" />
