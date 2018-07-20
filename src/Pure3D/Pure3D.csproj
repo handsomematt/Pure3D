@@ -68,6 +68,7 @@
     <Compile Include="Chunks\PositionList.cs" />
     <Compile Include="Chunks\BoundingSphere.cs" />
     <Compile Include="Chunks\BoundingBox.cs" />
+    <Compile Include="Chunks\Vector1Channel.cs" />
     <Compile Include="Chunks\Vector2Channel.cs" />
     <Compile Include="Chunks\Vector3Channel.cs" />
     <Compile Include="Chunks\VersionNamed.cs" />
