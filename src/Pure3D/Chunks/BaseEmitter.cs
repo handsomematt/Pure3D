@@ -3,12 +3,12 @@ using System.IO;
 namespace Pure3D.Chunks
 {
     [ChunkType(88069)]
-    public class OldBaseEmitter : Chunk
+    public class BaseEmitter : Chunk
     {
         public byte[] Data;
         private uint unknownType;
 
-        public OldBaseEmitter(File file, uint type) : base(file, type)
+        public BaseEmitter(File file, uint type) : base(file, type)
         {
             unknownType = type;
         }

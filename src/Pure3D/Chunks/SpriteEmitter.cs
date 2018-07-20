@@ -2,13 +2,13 @@ using System.IO;
 
 namespace Pure3D.Chunks
 {
-    [ChunkType(88075)]
-    public class OldParticleInstancingInfo : Chunk
+    [ChunkType(88070)]
+    public class SpriteEmitter : Chunk
     {
         public byte[] Data;
         private uint unknownType;
 
-        public OldParticleInstancingInfo(File file, uint type) : base(file, type)
+        public SpriteEmitter(File file, uint type) : base(file, type)
         {
             unknownType = type;
         }

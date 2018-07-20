@@ -3,12 +3,12 @@ using System.IO;
 namespace Pure3D.Chunks
 {
     [ChunkType(88072)]
-    public class OldParticleAnimation : Chunk
+    public class ParticleAnimation : Chunk
     {
         public byte[] Data;
         private uint unknownType;
 
-        public OldParticleAnimation(File file, uint type) : base(file, type)
+        public ParticleAnimation(File file, uint type) : base(file, type)
         {
             unknownType = type;
         }

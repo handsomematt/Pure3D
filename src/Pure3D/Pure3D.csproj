@@ -51,10 +51,10 @@
     <Compile Include="Chunks\AnimationSize.cs" />
     <Compile Include="Chunks\ChannelInterpolationMode.cs" />
     <Compile Include="Chunks\CompositeDrawableSkin.cs" />
-    <Compile Include="Chunks\OldParticleAnimation.cs" />
-    <Compile Include="Chunks\OldBaseEmitter.cs" />
-    <Compile Include="Chunks\OldSpriteEmitter.cs" />
-    <Compile Include="Chunks\OldParticleInstancingInfo.cs" />
+    <Compile Include="Chunks\ParticleAnimation.cs" />
+    <Compile Include="Chunks\BaseEmitter.cs" />
+    <Compile Include="Chunks\SpriteEmitter.cs" />
+    <Compile Include="Chunks\ParticleInstancingInfo.cs" />
     <Compile Include="Chunks\QuaternionChannel.cs" />
     <Compile Include="Chunks\CompressedQuaternionChannel.cs" />
     <Compile Include="Chunks\MatrixPalette.cs" />
