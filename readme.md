@@ -7,6 +7,10 @@ Pure3D game engine used most famously for the following games:
 * The Simpsons: Hit & Run
 * Crash Tag Team Racing
 
+![Animated GIF of Homer marching.](img/homer.gif)
+
+Animated Homer model from The Simpsons: Hit & Run imported into S&box game by [Layla](https://github.com/aylaylay) using Pure3D.
+
 ## Usage
 
 ```C#
