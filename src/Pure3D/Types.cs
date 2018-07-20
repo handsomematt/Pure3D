@@ -1,4 +1,4 @@
-﻿namespace Pure3D
+namespace Pure3D
 {
     public struct Vector2
     {
@@ -15,6 +15,14 @@
 
     public struct Quaternion
     {
+        public Quaternion(float x, float y, float z, float w)
+        {
+            X = x;
+            Y = y;
+            Z = z;
+            W = w;
+        }
+
         public float X;
         public float Y;
         public float Z;

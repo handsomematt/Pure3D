@@ -3,8 +3,8 @@ using System.Text;
 
 namespace Pure3D.Chunks
 {
-    [ChunkType(1184017)]
-    public class CompressedQuaternionChannel : Chunk
+    [ChunkType(1184005)]
+    public class QuaternionChannel : Chunk
     {
         public uint Version;
         public uint NumberOfFrames;
@@ -12,7 +12,7 @@ namespace Pure3D.Chunks
         public Quaternion[] Values;
         public ushort[] Frames;
 
-        public CompressedQuaternionChannel(File file, uint type) : base(file, type)
+        public QuaternionChannel(File file, uint type) : base(file, type)
         {
         }
 
@@ -34,12 +34,12 @@ namespace Pure3D.Chunks
             Values = new Quaternion[NumberOfFrames];
             for (int i = 0; i < NumberOfFrames; i++)
             {
-                var w = reader.ReadInt16() / (float)short.MaxValue;
+                var w = reader.ReadSingle();
                 Values[i] = new Quaternion
                 (
-                    reader.ReadInt16() / (float)short.MaxValue,
-                    reader.ReadInt16() / (float)short.MaxValue,
-                    reader.ReadInt16() / (float)short.MaxValue,
+                    reader.ReadSingle(),
+                    reader.ReadSingle(),
+                    reader.ReadSingle(),
                     w
                 );
             }
@@ -47,7 +47,7 @@ namespace Pure3D.Chunks
 
         public override string ToString()
         {
-            return $"Compressed Quaternion Channel: {Parameter}, {NumberOfFrames} Frames";
+            return $"Quaternion Channel: {Parameter}, {NumberOfFrames} Frames";
         }
     }
 }
